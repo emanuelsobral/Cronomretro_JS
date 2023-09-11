@@ -31,13 +31,18 @@ body {
 }
 
 button {
-    border-radius: 20px;
-    width: 100px;
-    height: 40px;
+    border-radius: 50px;
+    width: 150px;
+    height: 60px;
     border: none;
     background-color: #4E4FEB;
     color: white;
-    margin: 10px;
+    font-size: 20px;
+    margin: 50px 50px 0px 0px;
+}
+
+button:last-child{
+    margin: 50px 0px 0px 0px
 }
 
 button:hover{
