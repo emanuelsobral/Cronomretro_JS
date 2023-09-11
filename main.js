@@ -20,8 +20,10 @@ start.addEventListener('click', function() {
 });
 
 pause.addEventListener('click', function() {
-    clearInterval(cronometro);
-    pause.style.backgroundColor = 'red';
+    if (cronometro != undefined) {
+        clearInterval(cronometro);
+        pause.style.backgroundColor = 'red';
+    }
 });
 
 restart.addEventListener('click', function() {
@@ -34,6 +36,8 @@ restart.addEventListener('click', function() {
     minuteTimer.innerHTML = '00';
     SecondTimer.innerHTML = '00';
     MillisecondTimer.innerHTML = '000';
+
+    cronometro = undefined;
 
     pause.style.backgroundColor = '#4E4FEB'
 });
