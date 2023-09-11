@@ -46,5 +46,34 @@ button:last-child{
 }
 
 button:hover{
+    cursor: pointer;
     background-color: #068FFF;
 }
+
+@media (max-width: 768px) {
+    .tempo h1{
+        font-size: 0rem;
+        height: 80%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .tempo h1 span{
+        font-size: 5rem;
+    }
+    .botao{
+        display:flex;
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+        height: 40px;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    button:last-child{
+        margin-top: 10px;
+    }
+  }     
