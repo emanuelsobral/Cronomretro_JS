@@ -26,6 +26,8 @@ pause.addEventListener('click', function() {
         clearInterval(cronometro);
         pause.style.backgroundColor = 'red';
         cronometro = undefined;
+
+        start.textContent = 'Continuar';
     }
 });
 
@@ -46,6 +48,8 @@ restart.addEventListener('click', function() {
     cronometro = undefined;
 
     pause.style.backgroundColor = '#4E4FEB'
+
+    start.textContent = 'Começar';
 });
 
 function timer() {
