@@ -15,18 +15,24 @@ const pause = document.getElementById('pause');
 const restart = document.getElementById('restart');
 
 start.addEventListener('click', function() {
-    cronometro = setInterval(() => { timer(); }, 10); 
-    pause.style.backgroundColor = '#4E4FEB'
+    if (cronometro == undefined) {
+        cronometro = setInterval(() => { timer(); }, 10); 
+        pause.style.backgroundColor = '#4E4FEB'
+    }
 });
 
 pause.addEventListener('click', function() {
     if (cronometro != undefined) {
         clearInterval(cronometro);
         pause.style.backgroundColor = 'red';
+        cronometro = undefined;
     }
 });
 
 restart.addEventListener('click', function() {
+    
+    clearInterval(cronometro);
+
     hour = 0;
     minute = 0;
     second = 0;
