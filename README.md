@@ -10,6 +10,10 @@ Estas instruções permitirão que você obtenha uma cópia do projeto em opera�
 
 O que você precisa para instalar o software e como instalá-lo:
 
+## 🌐 Visualização ao vivo
+
+Você pode ver este projeto ao vivo [aqui](https://emanuelsobral.github.io/Cronomretro_JS/).
+
 ### 🔧 Instalação
 
 1. Clone este repositório para a sua máquina local usando `https://github.com/SEU_USUARIO/SEU_REPOSITORIO.git`.
